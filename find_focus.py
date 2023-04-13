@@ -25,7 +25,7 @@ from astropy.io import fits
 import os
 import numpy
 
-path="../focus1/"
+path="./focus1/"
 lista=[f for f in os.listdir(path) if ".fits" in f]
 
 for f_file in lista:

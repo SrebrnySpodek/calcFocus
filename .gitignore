@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# 
+#
+#
+focus1/
+focus2/
+focus3/
