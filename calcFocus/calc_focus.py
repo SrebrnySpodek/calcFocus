@@ -94,7 +94,7 @@ def calculate(fits_path, focus_keyword="FOCUS", focus_list=None, crop=10, method
     # ##### RMS with parabolic fit ######
     elif method == "rms":
 
-        if len(lista)<2:
+        if len(lista) < 2:
             raise ValueError(f"for {method} method at least 2 focus positions are required")
 
         focus_list_ret = []
@@ -129,7 +129,7 @@ def calculate(fits_path, focus_keyword="FOCUS", focus_list=None, crop=10, method
         dy = numpy.polyder(coef)     # 1st derivative
         d2y = numpy.polyder(dy)      # 2nd derivative   
         roots = numpy.roots(dy)      # zero points
-        val=numpy.polyval(d2y,roots)
+        val = numpy.polyval(d2y, roots)
 
         max_sharpness_focus = roots[numpy.argmin(val)]   # value with max sharpness
         calc_metadata = {"poly_coef": coef,"focus_values": focus_list_ret, "sharpness_values": sharpness_list_ret}
