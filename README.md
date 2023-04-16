@@ -1,7 +1,7 @@
 # calcFocus
 script for calculating focus encoder position for best sharpness, for a given FITS files. 
 
-![Alt Text](./doc/example1.png "Example of best sharpness derived for focus positions ")
+![Alt Text](./doc/exampleF1.png "Example of best sharpness derived for focus positions ")
 
 ## Usage CLI
 
